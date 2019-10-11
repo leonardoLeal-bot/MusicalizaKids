@@ -9,8 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBAction func button(_ sender: Any) {
+    
+    //Botao que seleciona a bateria
+    
+    @IBAction func bateria_selecionado(_ sender: Any) {
+    }
+    //    Botao que seleciona o violao
+    @IBAction func violao_selecionado(_ sender: Any) {
+    }
+    //    Botao que seleciona o piano
+    @IBAction func plano_selecionado(_ sender: Any) {
+    }
+    //    Botao que seleciona o trompete
+    @IBAction func trompete_selecionado(_ sender: Any) {
     }
     
     override func viewDidLoad() {
