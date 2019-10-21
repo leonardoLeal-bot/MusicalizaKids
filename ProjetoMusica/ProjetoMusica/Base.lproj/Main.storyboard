@@ -68,7 +68,7 @@
                                 <state key="normal" title="bateria"/>
                                 <connections>
                                     <action selector="bateria_selecionado:" destination="UGm-bP-NCW" eventType="touchUpInside" id="9Ex-RI-l34"/>
-                                    <segue destination="VwB-HC-8oc" kind="show" id="uNm-qQ-iTe"/>
+                                    <segue destination="VwB-HC-8oc" kind="show" identifier="bateria" id="uNm-qQ-iTe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4M-zU-doW" userLabel="violao_button">
@@ -78,7 +78,7 @@
                                 <state key="normal" title="violao"/>
                                 <connections>
                                     <action selector="violao_selecionado:" destination="UGm-bP-NCW" eventType="touchUpInside" id="w8z-IY-TXX"/>
-                                    <segue destination="VwB-HC-8oc" kind="show" id="XfE-ab-vdH"/>
+                                    <segue destination="VwB-HC-8oc" kind="show" identifier="violao" id="XfE-ab-vdH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wzw-xe-kN2" userLabel="piano_button">
@@ -88,7 +88,7 @@
                                 <state key="normal" title="piano"/>
                                 <connections>
                                     <action selector="plano_selecionado:" destination="UGm-bP-NCW" eventType="touchUpInside" id="ZoZ-dq-WfT"/>
-                                    <segue destination="VwB-HC-8oc" kind="show" id="AuI-dh-WjN"/>
+                                    <segue destination="VwB-HC-8oc" kind="show" identifier="piano" id="AuI-dh-WjN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkT-6t-Nd4" userLabel="trompete_button">
@@ -98,7 +98,7 @@
                                 <state key="normal" title="trompete"/>
                                 <connections>
                                     <action selector="trompete_selecionado:" destination="UGm-bP-NCW" eventType="touchUpInside" id="N0t-V0-j2z"/>
-                                    <segue destination="VwB-HC-8oc" kind="show" id="wQT-uN-vUq"/>
+                                    <segue destination="VwB-HC-8oc" kind="show" identifier="trompete" id="wQT-uN-vUq"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bateria_icon" translatesAutoresizingMaskIntoConstraints="NO" id="brD-V2-9o2" userLabel="instrumento1">
@@ -146,7 +146,7 @@
         <!--Nível de Dificuldade-->
         <scene sceneID="wK5-AL-bGn">
             <objects>
-                <viewController id="VwB-HC-8oc" sceneMemberID="viewController">
+                <viewController id="VwB-HC-8oc" customClass="Seleciona_nivel_ViewController" customModule="ProjetoMusica" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fq2-yK-KEF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -201,7 +201,7 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="selectlevel:" destination="gWw-bi-8LG" eventType="touchUpInside" id="ct0-fj-u68"/>
-                                    <segue destination="FsO-Ry-brL" kind="show" id="hOp-Qv-93z"/>
+                                    <segue destination="FsO-Ry-brL" kind="show" identifier="nivel1" id="hOp-Qv-93z"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Hz-Wn-1im" userLabel="Button_nivel2">
@@ -210,7 +210,7 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="selectlevel:" destination="gWw-bi-8LG" eventType="touchUpInside" id="zcv-qa-Cwe"/>
-                                    <segue destination="FsO-Ry-brL" kind="show" id="CiP-zx-bCh"/>
+                                    <segue destination="FsO-Ry-brL" kind="show" identifier="nivel2" id="CiP-zx-bCh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eoe-Nv-Z9H" userLabel="Button_nivel3">
@@ -219,7 +219,7 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="selectlevel:" destination="gWw-bi-8LG" eventType="touchUpInside" id="enr-jx-Gyx"/>
-                                    <segue destination="FsO-Ry-brL" kind="show" id="Djs-dh-3oL"/>
+                                    <segue destination="FsO-Ry-brL" kind="show" identifier="nivel3" id="Djs-dh-3oL"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nivel1_img" translatesAutoresizingMaskIntoConstraints="NO" id="1ej-a4-izw">
@@ -372,10 +372,10 @@
             </objects>
             <point key="canvasLocation" x="2737.68115942029" y="-867.1875"/>
         </scene>
-        <!--View Controller-->
+        <!--Tela Pergunta View Controller-->
         <scene sceneID="9Yy-tw-2C2">
             <objects>
-                <viewController id="FsO-Ry-brL" sceneMemberID="viewController">
+                <viewController id="FsO-Ry-brL" customClass="Tela_Pergunta_ViewController" customModule="ProjetoMusica" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3uY-SX-cMk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -429,10 +429,10 @@
             </objects>
             <point key="canvasLocation" x="4376.811594202899" y="-206.25"/>
         </scene>
-        <!--View Controller-->
+        <!--Final Content View Controller-->
         <scene sceneID="rXZ-HI-70o">
             <objects>
-                <viewController id="c8p-b6-xIw" sceneMemberID="viewController">
+                <viewController id="c8p-b6-xIw" customClass="Final_Content_ViewController" customModule="ProjetoMusica" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gv6-ex-XRE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -471,7 +471,7 @@
         <image name="violao_icon" width="253.33332824707031" height="247.33332824707031"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CiP-zx-bCh"/>
-        <segue reference="wQT-uN-vUq"/>
+        <segue reference="Djs-dh-3oL"/>
+        <segue reference="uNm-qQ-iTe"/>
     </inferredMetricsTieBreakers>
 </document>
