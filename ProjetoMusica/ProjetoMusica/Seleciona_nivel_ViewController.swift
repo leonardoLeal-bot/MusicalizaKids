@@ -10,26 +10,29 @@ import UIKit
 
 class Seleciona_nivel_ViewController: UIViewController {
 
+    var instrumento_selecionado:Int?
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
-        
-        
-        
+
         // Do any additional setup after loading the view.
     }
     
+    @IBOutlet weak var Pergunta_user: UILabel!
     
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let passa_info = segue.destination as! Tela_Pergunta_ViewController
+            if segue.identifier == "nivel1"{
+                passa_info.nivel_selecionado = 1
+            }
+            if segue.identifier == "nivel2"{
+                passa_info.nivel_selecionado = 2
+            }
+            if segue.identifier == "nivel3"{
+                passa_info.nivel_selecionado = 3
+            }
+            passa_info.instrumento_selecionado = instrumento_selecionado
     }
-    */
 
 }

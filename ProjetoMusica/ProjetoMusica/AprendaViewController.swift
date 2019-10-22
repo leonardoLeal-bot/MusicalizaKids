@@ -1,24 +1,18 @@
 //
-//  Final_Content_ViewController.swift
+//  AprendaViewController.swift
 //  ProjetoMusica
 //
-//  Created by Aluno Mack on 21/10/19.
+//  Created by Aluno Mack on 22/10/19.
 //  Copyright © 2019 Aluno Mack. All rights reserved.
 //
 
 import UIKit
 
-class Final_Content_ViewController: UIViewController {
+class AprendaViewController: UIViewController {
 
-    @IBOutlet weak var videoView: UIWebView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-        videoView.allowsInlineMediaPlayback = true
-        
-        videoView.loadHTMLString("<iframe width=\"600\" height=\"450\" src=\"https://www.youtube.com/embed/KThAXtZkoRY\" frameborder=\"0\" allow=\",accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>", baseURL: nil)
         // Do any additional setup after loading the view.
     }
     

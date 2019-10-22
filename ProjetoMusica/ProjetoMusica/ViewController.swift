@@ -10,8 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    //Botao que seleciona a bateria
     
+    // variavieis utilizadas no segue
+    
+    
+    
+    //Botao que seleciona a bateria
     @IBAction func bateria_selecionado(_ sender: Any) {
     }
     //    Botao que seleciona o violao
@@ -28,7 +32,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let instrumento_info = segue.destination as! Seleciona_nivel_ViewController
+            if segue.identifier == "bateriaX"{
+                instrumento_info.instrumento_selecionado = 1
+            }
+            if segue.identifier == "pianoX"{
+                instrumento_info.instrumento_selecionado = 3
+            }
+            if segue.identifier == "violaoX"{
+                instrumento_info.instrumento_selecionado = 2
+            }
+            if segue.identifier == "trompeteX"{
+                instrumento_info.instrumento_selecionado = 4
+            }
+    }
 
 }
 

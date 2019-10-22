@@ -62,50 +62,50 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7y-f8-dn8" userLabel="bateria_button">
-                                <rect key="frame" x="46" y="417" width="150" height="84"/>
+                                <rect key="frame" x="46" y="382" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="bateria"/>
                                 <connections>
                                     <action selector="bateria_selecionado:" destination="UGm-bP-NCW" eventType="touchUpInside" id="9Ex-RI-l34"/>
-                                    <segue destination="VwB-HC-8oc" kind="show" identifier="bateria" id="uNm-qQ-iTe"/>
+                                    <segue destination="VwB-HC-8oc" kind="show" identifier="bateriaX" id="uNm-qQ-iTe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4M-zU-doW" userLabel="violao_button">
-                                <rect key="frame" x="219" y="416" width="150" height="84"/>
+                                <rect key="frame" x="219" y="383" width="150" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="violao"/>
                                 <connections>
                                     <action selector="violao_selecionado:" destination="UGm-bP-NCW" eventType="touchUpInside" id="w8z-IY-TXX"/>
-                                    <segue destination="VwB-HC-8oc" kind="show" identifier="violao" id="XfE-ab-vdH"/>
+                                    <segue destination="VwB-HC-8oc" kind="show" identifier="violaoX" id="XfE-ab-vdH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wzw-xe-kN2" userLabel="piano_button">
-                                <rect key="frame" x="46" y="585" width="150" height="84"/>
+                                <rect key="frame" x="46" y="553" width="150" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="piano"/>
                                 <connections>
                                     <action selector="plano_selecionado:" destination="UGm-bP-NCW" eventType="touchUpInside" id="ZoZ-dq-WfT"/>
-                                    <segue destination="VwB-HC-8oc" kind="show" identifier="piano" id="AuI-dh-WjN"/>
+                                    <segue destination="VwB-HC-8oc" kind="show" identifier="pianoX" id="AuI-dh-WjN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkT-6t-Nd4" userLabel="trompete_button">
-                                <rect key="frame" x="219" y="585" width="150" height="84"/>
+                                <rect key="frame" x="219" y="553" width="150" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="trompete"/>
                                 <connections>
                                     <action selector="trompete_selecionado:" destination="UGm-bP-NCW" eventType="touchUpInside" id="N0t-V0-j2z"/>
-                                    <segue destination="VwB-HC-8oc" kind="show" identifier="trompete" id="wQT-uN-vUq"/>
+                                    <segue destination="VwB-HC-8oc" kind="show" identifier="trompeteX" id="wQT-uN-vUq"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bateria_icon" translatesAutoresizingMaskIntoConstraints="NO" id="brD-V2-9o2" userLabel="instrumento1">
                                 <rect key="frame" x="46" y="382" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="violao_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Fs6-AB-J1j" userLabel="instrumento2">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="violao" translatesAutoresizingMaskIntoConstraints="NO" id="Fs6-AB-J1j" userLabel="instrumento2">
                                 <rect key="frame" x="219" y="382" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -143,7 +143,7 @@
             </objects>
             <point key="canvasLocation" x="2739.130434782609" y="-205.58035714285714"/>
         </scene>
-        <!--Nível de Dificuldade-->
+        <!--Escolha o nível-->
         <scene sceneID="wK5-AL-bGn">
             <objects>
                 <viewController id="VwB-HC-8oc" customClass="Seleciona_nivel_ViewController" customModule="ProjetoMusica" customModuleProvider="target" sceneMemberID="viewController">
@@ -238,7 +238,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ZLD-f4-oGW"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Nível de Dificuldade" id="mSk-qD-YKR"/>
+                    <navigationItem key="navigationItem" title="Escolha o nível" id="mSk-qD-YKR"/>
+                    <connections>
+                        <outlet property="Pergunta_user" destination="qSp-OE-NlC" id="fs3-SP-qSj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hdr-cC-Dfw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="gWw-bi-8LG" userLabel="Exit" sceneMemberID="exit"/>
@@ -339,13 +342,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="user_name_input" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVx-et-MaI">
-                                <rect key="frame" x="95" y="434" width="211" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7o6-d2-XHV">
                                 <rect key="frame" x="95" y="675" width="247" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -357,10 +353,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Insira seu nome aqui" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A8w-gn-yTj">
-                                <rect key="frame" x="120" y="505" width="161" height="34"/>
+                                <rect key="frame" x="95" y="478" width="214" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
@@ -372,7 +368,7 @@
             </objects>
             <point key="canvasLocation" x="2737.68115942029" y="-867.1875"/>
         </scene>
-        <!--Tela Pergunta View Controller-->
+        <!--Responda-->
         <scene sceneID="9Yy-tw-2C2">
             <objects>
                 <viewController id="FsO-Ry-brL" customClass="Tela_Pergunta_ViewController" customModule="ProjetoMusica" customModuleProvider="target" sceneMemberID="viewController">
@@ -384,6 +380,38 @@
                                 <rect key="frame" x="0.0" y="85" width="414" height="215"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TiA-pt-54u">
+                                <rect key="frame" x="219" y="377" width="150" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="B1"/>
+                                <connections>
+                                    <action selector="show_detail:" destination="FsO-Ry-brL" eventType="touchUpInside" id="mDN-fV-qiY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhI-gi-pHO">
+                                <rect key="frame" x="46" y="376" width="150" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="B2"/>
+                                <connections>
+                                    <action selector="show_detail:" destination="FsO-Ry-brL" eventType="touchUpInside" id="8Xg-9L-jFz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tO-GP-NpE">
+                                <rect key="frame" x="46" y="546" width="150" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="B3"/>
+                                <connections>
+                                    <action selector="show_detail:" destination="FsO-Ry-brL" eventType="touchUpInside" id="SfM-GP-KrR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R70-2s-3xi">
+                                <rect key="frame" x="218" y="546" width="150" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="B4"/>
+                                <connections>
+                                    <action selector="show_detail:" destination="FsO-Ry-brL" eventType="touchUpInside" id="Zcm-Hu-0f0"/>
+                                </connections>
+                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="piano_icon" translatesAutoresizingMaskIntoConstraints="NO" id="cdd-hx-b46" userLabel="instrumento1">
                                 <rect key="frame" x="46" y="372" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -392,7 +420,7 @@
                                 <rect key="frame" x="219" y="372" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="prato" translatesAutoresizingMaskIntoConstraints="NO" id="Mh7-Vo-RUn">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chimbal" translatesAutoresizingMaskIntoConstraints="NO" id="Mh7-Vo-RUn">
                                 <rect key="frame" x="46" y="542" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -423,13 +451,21 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="XK6-WT-3qD"/>
                     </view>
-                    <navigationItem key="navigationItem" id="fb5-xd-YuG"/>
+                    <navigationItem key="navigationItem" title="Responda" id="fb5-xd-YuG"/>
+                    <connections>
+                        <outlet property="Pergunta_tela_pergunta" destination="Crs-4B-PfR" id="CH5-95-llJ"/>
+                        <outlet property="opcao_resposta_1" destination="cdd-hx-b46" id="CT1-0v-DDv"/>
+                        <outlet property="opcao_resposta_2" destination="SBk-jo-3f5" id="UHd-3o-8x2"/>
+                        <outlet property="opcao_resposta_3" destination="Mh7-Vo-RUn" id="bte-ah-fpl"/>
+                        <outlet property="opcao_resposta_4" destination="MYg-le-gJv" id="nb5-cG-z8s"/>
+                        <segue destination="c8p-b6-xIw" kind="show" identifier="tela_detalhes" id="aAV-6W-hhs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qYy-7u-DtR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4376.811594202899" y="-206.25"/>
         </scene>
-        <!--Final Content View Controller-->
+        <!--Aprenda-->
         <scene sceneID="rXZ-HI-70o">
             <objects>
                 <viewController id="c8p-b6-xIw" customClass="Final_Content_ViewController" customModule="ProjetoMusica" customModuleProvider="target" sceneMemberID="viewController">
@@ -437,14 +473,80 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EEs-sx-pYX">
-                                <rect key="frame" x="64" y="507" width="286" height="173"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Imm-2d-b5e">
+                                <rect key="frame" x="20" y="372" width="79" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cu2-Dy-GDc">
+                                <rect key="frame" x="115" y="372" width="79" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xDu-Zj-8P6">
+                                <rect key="frame" x="212" y="372" width="79" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1GR-jz-WO5">
+                                <rect key="frame" x="315" y="372" width="79" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_pai" translatesAutoresizingMaskIntoConstraints="NO" id="Tmp-za-8nd" userLabel="Background">
+                                <rect key="frame" x="0.0" y="85" width="414" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descritivo 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rga-g4-enW">
+                                <rect key="frame" x="141" y="473" width="131" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descritivo 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgO-d5-3e6">
+                                <rect key="frame" x="141" y="326" width="131" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Link" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ben-1k-lzh">
+                                <rect key="frame" x="142" y="743" width="131" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgrd_acerto" translatesAutoresizingMaskIntoConstraints="NO" id="iSC-2i-9wm">
+                                <rect key="frame" x="20" y="214" width="380" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgrd_acerto" translatesAutoresizingMaskIntoConstraints="NO" id="abY-u9-jRE" userLabel="avatar_user">
+                                <rect key="frame" x="152" y="96" width="110" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boy" translatesAutoresizingMaskIntoConstraints="NO" id="wTD-OY-IBc" userLabel="avatar_photo">
+                                <rect key="frame" x="166" y="111" width="82" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Boa! Opção correta! Agora, vamos aprender um pouco mais?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YlR-PJ-uW5">
+                                <rect key="frame" x="34" y="224" width="353" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pQh-bG-Zk1">
+                                <rect key="frame" x="87" y="552" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="FrM-eR-Vhk"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Aprenda" id="sdP-Uv-xuO"/>
+                    <connections>
+                        <outlet property="videoView" destination="pQh-bG-Zk1" id="sSy-eo-2Gj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0jj-Kb-Iet" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -452,6 +554,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backgrd_acerto" width="1058" height="318"/>
         <image name="background_pai" width="2057" height="1814"/>
         <image name="background_text_user" width="1734" height="414"/>
         <image name="baqueta" width="569" height="541"/>
@@ -459,6 +562,7 @@
         <image name="border_avatar" width="340" height="330"/>
         <image name="boy" width="170.66667175292969" height="170.66667175292969"/>
         <image name="caixa_icon" width="260.33334350585938" height="248"/>
+        <image name="chimbal" width="477" height="455"/>
         <image name="folder.fill" catalog="system" width="64" height="48"/>
         <image name="keyboard" catalog="system" width="64" height="34"/>
         <image name="nivel1_img" width="1618" height="526"/>
@@ -466,9 +570,8 @@
         <image name="nivel3_img" width="1612" height="516"/>
         <image name="papiro" width="170.66667175292969" height="170.66667175292969"/>
         <image name="piano_icon" width="302" height="280"/>
-        <image name="prato" width="477" height="455"/>
         <image name="trompete_icon" width="800" height="760"/>
-        <image name="violao_icon" width="253.33332824707031" height="247.33332824707031"/>
+        <image name="violao" width="253.33332824707031" height="247.33332824707031"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Djs-dh-3oL"/>
