@@ -10,10 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
+    var name = "Amigo"
+
     // variavieis utilizadas no segue
-    
-    
+    @IBOutlet weak var receiveUserName: UILabel!
     
     //Botao que seleciona a bateria
     @IBAction func bateria_selecionado(_ sender: Any) {
@@ -30,8 +30,17 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+   
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        name = UserDefaults.standard.string(forKey: "UserName") ?? "Amigo"
+        receiveUserName.text = name
+//        self.navigationItem.leftBarButtonItem = nil
+//        self.navigationController?.navigationBar.
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let instrumento_info = segue.destination as! Seleciona_nivel_ViewController
             if segue.identifier == "bateriaX"{
