@@ -15,6 +15,11 @@
 		55C34D4D234E161B00D95632 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C34D4B234E161B00D95632 /* Main.storyboard */; };
 		55C34D4F234E161D00D95632 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C34D4E234E161D00D95632 /* Assets.xcassets */; };
 		55C34D52234E161D00D95632 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C34D50234E161D00D95632 /* LaunchScreen.storyboard */; };
+		55CD724F2361D72700485803 /* MediaPLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CD724E2361D72700485803 /* MediaPLayer.swift */; };
+		55CD72522361DA2900485803 /* Bateria.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 55CD72512361DA2900485803 /* Bateria.mp3 */; };
+		55CD72542361DB4400485803 /* Violao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 55CD72532361DB4400485803 /* Violao.mp3 */; };
+		55CD72582361E45400485803 /* Trompete.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 55CD72572361E45400485803 /* Trompete.mp3 */; };
+		55CD725A2361E57200485803 /* Piano.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 55CD72592361E57200485803 /* Piano.mp3 */; };
 		55D42324235DCBD300DB5DD1 /* Seleciona_nivel_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D42323235DCBD300DB5DD1 /* Seleciona_nivel_ViewController.swift */; };
 		55D42326235DCDC000DB5DD1 /* Tela_Pergunta_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D42325235DCDC000DB5DD1 /* Tela_Pergunta_ViewController.swift */; };
 		55D42328235DCE4600DB5DD1 /* Final_Content_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D42327235DCE4600DB5DD1 /* Final_Content_ViewController.swift */; };
@@ -31,6 +36,11 @@
 		55C34D4E234E161D00D95632 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55C34D51234E161D00D95632 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55C34D53234E161D00D95632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55CD724E2361D72700485803 /* MediaPLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPLayer.swift; sourceTree = "<group>"; };
+		55CD72512361DA2900485803 /* Bateria.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Bateria.mp3; path = ../../../../../Downloads/Bateria.mp3; sourceTree = "<group>"; };
+		55CD72532361DB4400485803 /* Violao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Violao.mp3; path = ../../../../../Downloads/Violao.mp3; sourceTree = "<group>"; };
+		55CD72572361E45400485803 /* Trompete.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Trompete.mp3; path = ../../../../../Downloads/Trompete.mp3; sourceTree = "<group>"; };
+		55CD72592361E57200485803 /* Piano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Piano.mp3; path = ../../../../../Downloads/Piano.mp3; sourceTree = "<group>"; };
 		55D42323235DCBD300DB5DD1 /* Seleciona_nivel_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seleciona_nivel_ViewController.swift; sourceTree = "<group>"; };
 		55D42325235DCDC000DB5DD1 /* Tela_Pergunta_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela_Pergunta_ViewController.swift; sourceTree = "<group>"; };
 		55D42327235DCE4600DB5DD1 /* Final_Content_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Final_Content_ViewController.swift; sourceTree = "<group>"; };
@@ -66,12 +76,14 @@
 		55C34D46234E161B00D95632 /* ProjetoMusica */ = {
 			isa = PBXGroup;
 			children = (
+				55CD72502361DA1200485803 /* Sounds */,
 				55C34D4B234E161B00D95632 /* Main.storyboard */,
 				55162247235F3A7D008A6FF1 /* AprendaViewController.swift */,
 				5516224923607885008A6FF1 /* NomeUserViewController.swift */,
 				55C34D49234E161B00D95632 /* ViewController.swift */,
 				55D42323235DCBD300DB5DD1 /* Seleciona_nivel_ViewController.swift */,
 				55D42325235DCDC000DB5DD1 /* Tela_Pergunta_ViewController.swift */,
+				55CD724E2361D72700485803 /* MediaPLayer.swift */,
 				55D42327235DCE4600DB5DD1 /* Final_Content_ViewController.swift */,
 				55C34D4E234E161D00D95632 /* Assets.xcassets */,
 				55C34D50234E161D00D95632 /* LaunchScreen.storyboard */,
@@ -80,6 +92,17 @@
 				55C34D53234E161D00D95632 /* Info.plist */,
 			);
 			path = ProjetoMusica;
+			sourceTree = "<group>";
+		};
+		55CD72502361DA1200485803 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				55CD72572361E45400485803 /* Trompete.mp3 */,
+				55CD72592361E57200485803 /* Piano.mp3 */,
+				55CD72532361DB4400485803 /* Violao.mp3 */,
+				55CD72512361DA2900485803 /* Bateria.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +164,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				55C34D52234E161D00D95632 /* LaunchScreen.storyboard in Resources */,
+				55CD72542361DB4400485803 /* Violao.mp3 in Resources */,
+				55CD72522361DA2900485803 /* Bateria.mp3 in Resources */,
 				55C34D4F234E161D00D95632 /* Assets.xcassets in Resources */,
 				55C34D4D234E161B00D95632 /* Main.storyboard in Resources */,
+				55CD725A2361E57200485803 /* Piano.mp3 in Resources */,
+				55CD72582361E45400485803 /* Trompete.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55CD724F2361D72700485803 /* MediaPLayer.swift in Sources */,
 				55C34D4A234E161B00D95632 /* ViewController.swift in Sources */,
 				55162248235F3A7D008A6FF1 /* AprendaViewController.swift in Sources */,
 				55D42328235DCE4600DB5DD1 /* Final_Content_ViewController.swift in Sources */,

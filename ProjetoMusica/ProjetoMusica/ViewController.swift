@@ -47,10 +47,10 @@ class ViewController: UIViewController {
                 instrumento_info.instrumento_selecionado = 1
             }
             if segue.identifier == "pianoX"{
-                instrumento_info.instrumento_selecionado = 3
+                instrumento_info.instrumento_selecionado = 2
             }
             if segue.identifier == "violaoX"{
-                instrumento_info.instrumento_selecionado = 2
+                instrumento_info.instrumento_selecionado = 3
             }
             if segue.identifier == "trompeteX"{
                 instrumento_info.instrumento_selecionado = 4

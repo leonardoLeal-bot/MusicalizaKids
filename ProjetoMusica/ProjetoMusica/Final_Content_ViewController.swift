@@ -11,28 +11,39 @@ import Foundation
 import AVFoundation
 
 class Final_Content_ViewController: UIViewController {
-
-    @IBOutlet weak var videoView: UIWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
-        videoView.allowsInlineMediaPlayback = true
-        
-        videoView.loadHTMLString("<iframe width=\"600\" height=\"450\" src=\"https://www.youtube.com/embed/KThAXtZkoRY\" frameborder=\"0\" allow=\",accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>", baseURL: nil)
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //EMT
+    @IBAction func link1(_ sender: Any) {
+        
+        let url = URL(string: "https://emt.com.br")
+        
+        UIApplication.shared.open(url!, options: [:], completionHandler: nil)
     }
-    */
-
+    
+    //Sonora Paulista
+    @IBAction func link2(_ sender: Any) {
+        let url = URL(string: "https://www.sonorapaulista.com.br")
+        UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+        
+    }
+    
+    //Atelier de La Musique
+    @IBAction func link3(_ sender: Any) {
+        let url = URL(string: "https://atelierdelamusique.com.br")
+        
+        UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+    }
+    
+    //Cifra Club
+    @IBAction func link4(_ sender: Any) {
+        let url = URL(string: "https://www.cifraclub.com.br")
+        UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+    
+    }
+    
 }
